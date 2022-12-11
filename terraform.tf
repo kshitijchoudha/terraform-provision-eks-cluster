@@ -3,6 +3,7 @@ terraform {
     aws = {
       source  = "hashicorp/aws"
       version = "~> 4.15.0"
+      use_fips_endpoint = true
     }
 
     random = {
