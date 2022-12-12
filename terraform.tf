@@ -2,8 +2,7 @@ terraform {
   required_providers {
     aws = {
       source            = "hashicorp/aws"
-      version           = "~> 4.15.0"
-      use_fips_endpoint = true
+      version           = "~> 3.27.0"
     }
 
     random = {
