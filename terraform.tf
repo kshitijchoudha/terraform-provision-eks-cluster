@@ -29,7 +29,7 @@ terraform {
     organization = "example-org-7e8de7"
 
     workspaces {
-      name = "eks-deploymento"
+      name = "eks-deployment"
 
     }
   }
