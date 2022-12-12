@@ -31,7 +31,8 @@ terraform {
     workspaces {
       name = "eks-deploymento"
 
-
+    }
+  }
   required_version = "~> 1.3"
 }
 
