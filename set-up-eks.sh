@@ -6,3 +6,6 @@ terraform init
 terraform apply
 aws eks --region $(terraform output -raw region) update-kubeconfig \
     --name $(terraform output -raw cluster_name)
+kubectl create secret docker-registry gh-token --docker-server=ghcr.io \
+    --docker-username=kshitijchoudha \
+    --docker-password=$GH_API_TOKEN -o yaml
